@@ -30,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         CarouselView mCarousel = (CarouselView) findViewById(R.id.carousel);
         mCarousel.setTransformer(new CarouselTransform());
-        mCarousel.getLayoutManager().resetOptions();
-        mCarousel.getLayoutManager().setDrawOrder(CarouselView.DrawOrder.FirstFront);
-        mCarousel.setClipChildren(false);
         mCarousel.setExtraVisibleChilds(3);
         mCarousel.setEnableFling(false);
         mCarousel.setAdapter(new CustomAdapter(this, list));
